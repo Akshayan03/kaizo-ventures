@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kaizo Ventures</title>
+<meta name="description" content="Kaizo is a selective venture studio. We pressure-test your idea, make your AI-built product secure and production-ready, launch it, and introduce the founders who earn it to investors.">
+<meta property="og:title" content="Kaizo Ventures">
+<meta property="og:description" content="You built it. We make it real. A selective venture studio, three founders per cohort.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0C0B0A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230C0B0A'/%3E%3Crect x='6' y='6' width='52' height='52' fill='none' stroke='%23C9AE7C' stroke-width='3'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23C9AE7C'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&text=%E6%94%B9%E9%80%A0&display=swap">
+<style>
+/* Layout: one quiet editorial column, hairline rules between sections, a single champagne accent, a 改造 hallmark as the identity mark. Deliberately dark-only. */
+:root {
+  --ink: #0C0B0A;
+  --paper: #F1ECE2;
+  --body: #D9D3C7;
+  --muted: #A39C90;
+  --faint: #8A8478;
+  --rule: #2B2824;
+  --rule-strong: #4A453E;
+  --gold: #C9AE7C;
+  --display: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+  --text: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --jp: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+}
+html { background: var(--ink); scroll-behavior: smooth; }
+body { margin: 0; background: var(--ink); color: var(--paper); font-family: var(--text); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 1px solid var(--gold); outline-offset: 5px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+
+.wrap { max-width: 1200px; margin-inline: auto; padding-inline: clamp(20px, 5vw, 56px); }
+.label { font-size: 11.5px; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); }
+.accent { color: var(--gold); }
+
+/* Header */
+.top { border-bottom: 1px solid var(--rule); }
+.top .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 40px; padding-block: 24px; }
+.mark { display: flex; align-items: baseline; gap: 14px; }
+.mark b { font-family: var(--display); font-weight: 400; font-size: 30px; line-height: 1; }
+.mark span { font-size: 10.5px; font-weight: 500; letter-spacing: 0.3em; color: var(--muted); }
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0 32px; font-size: 11.5px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; }
+.nav a { color: var(--muted); padding-block: 14px; transition: color .2s; }
+.nav a:hover { color: var(--paper); }
+.nav a.cta { color: var(--gold); padding-bottom: 6px; border-bottom: 1px solid var(--gold); }
+
+/* Hero */
+.hero { padding-block: clamp(72px, 11vw, 168px) clamp(72px, 9vw, 128px); }
+.eyebrow { display: flex; align-items: center; gap: 16px; }
+.eyebrow i { width: 40px; height: 1px; background: var(--gold); }
+.hero h1 { margin-top: 36px; font-size: clamp(54px, 8.4vw, 132px); line-height: 0.98; letter-spacing: -0.02em; }
+.hero-foot { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 48px 80px; margin-top: clamp(64px, 8vw, 112px); padding-top: 40px; border-top: 1px solid var(--rule); }
+.hallmark-row { flex: 0 1 360px; display: flex; align-items: flex-start; gap: 24px; min-width: 0; }
+.hallmark { flex: 0 0 auto; width: 76px; height: 76px; box-sizing: border-box; border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; }
+.hallmark span { writing-mode: vertical-rl; font-family: var(--jp); font-weight: 500; font-size: 26px; line-height: 1.05; color: var(--gold); }
+.hallmark-row p { font-size: 14.5px; line-height: 1.65; color: var(--muted); }
+.hallmark-row p em { font-style: normal; color: var(--paper); }
+.pitch { flex: 1 1 420px; min-width: 0; }
+.pitch p { max-width: 600px; font-size: clamp(18px, 1.6vw, 21px); line-height: 1.65; color: var(--body); }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 36px; margin-top: 40px; }
+.btn { display: inline-flex; align-items: center; min-height: 56px; padding-inline: 34px; background: var(--gold); color: var(--ink); font-size: 12px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; transition: background .2s; }
+.btn:hover { background: var(--paper); color: var(--ink); }
+.text-link { padding-block: 14px 6px; border-bottom: 1px solid var(--rule-strong); color: var(--body); font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; transition: border-color .2s; }
+.text-link:hover { border-color: var(--gold); }
+
+/* Sections */
+.section { padding-block: clamp(72px, 9vw, 128px); }
+.section h2 { margin-top: 20px; font-size: clamp(38px, 5vw, 72px); line-height: 1.02; letter-spacing: -0.015em; }
+.section-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 56px; padding-bottom: 48px; }
+.section-head > p { max-width: 360px; color: var(--muted); }
+
+/* Levels */
+.levels { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--rule); }
+.level { display: flex; flex-wrap: wrap; align-items: baseline; gap: 16px 48px; padding-block: 44px; border-top: 1px solid var(--rule); }
+.level .num { flex: 0 0 96px; font-family: var(--display); font-size: 44px; line-height: 1; color: var(--gold); }
+.level .what { flex: 1 1 360px; min-width: 0; }
+.level h3 { font-size: clamp(27px, 2.6vw, 36px); line-height: 1.15; }
+.level .what p { margin-top: 14px; max-width: 500px; color: var(--muted); }
+.level .clear { flex: 0 1 220px; }
+.level .clear div { margin-top: 10px; color: var(--body); }
+
+/* Who */
+.columns { display: flex; flex-wrap: wrap; gap: 48px 80px; margin-top: 64px; }
+.columns > div { flex: 1 1 320px; min-width: 0; }
+.columns .label { padding-bottom: 18px; font-size: 10.5px; }
+.list { list-style: none; margin: 0; padding: 0; font-size: 19px; line-height: 1.45; border-bottom: 1px solid var(--rule); }
+.list li { padding-block: 20px; border-top: 1px solid var(--rule); }
+.list.no { color: var(--faint); }
+.list.no li { text-decoration: line-through; text-decoration-color: var(--gold); text-decoration-thickness: 1px; }
+
+/* Deal */
+.terms { border-bottom: 1px solid var(--rule); margin-top: 32px; }
+.term { display: flex; flex-wrap: wrap; align-items: baseline; gap: 16px 56px; padding-block: 40px; border-top: 1px solid var(--rule); }
+.term h3 { flex: 1 1 440px; min-width: 0; font-size: clamp(34px, 4.2vw, 60px); line-height: 1.05; letter-spacing: -0.015em; }
+.term p { flex: 1 1 300px; min-width: 0; color: var(--muted); }
+
+/* Invite */
+.invite { padding-block: clamp(72px, 9vw, 128px) clamp(96px, 11vw, 160px); }
+.invite-grid { display: flex; flex-wrap: wrap; gap: 56px 96px; }
+.invite-grid > div { flex: 1 1 340px; min-width: 0; }
+.invite h2 { margin-top: 20px; font-size: clamp(52px, 6.4vw, 96px); line-height: 0.98; letter-spacing: -0.02em; }
+.invite .lede { margin-top: 28px; max-width: 400px; font-size: 17px; color: var(--muted); }
+.steps { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--rule); counter-reset: s; }
+.steps li { display: flex; gap: 24px; padding-block: 22px; border-top: 1px solid var(--rule); color: var(--body); }
+.steps li::before { counter-increment: s; content: counter(s, upper-roman); flex: 0 0 36px; font-family: var(--display); font-size: 20px; color: var(--gold); line-height: 1.3; }
+.invite .actions { margin-top: 36px; }
+.soon { margin-top: 36px; color: var(--muted); }
+
+/* Footer */
+.foot { border-top: 1px solid var(--rule); }
+.foot .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-block: 32px 48px; }
+.foot-mark { display: flex; align-items: center; gap: 16px; }
+.foot-mark .hallmark { width: 32px; height: 32px; }
+.foot-mark .hallmark span { font-size: 11px; }
+.foot .label, .foot .nav a { font-size: 11px; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Kaizo Ventures, home"><b>Kaizo</b><span>VENTURES</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#levels">Levels</a>
+      <a href="#who">Who we take</a>
+      <a href="#deal">The deal</a>
+      <a class="cta" href="#invite">Request an invite</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow label"><i></i><span>A selective venture studio</span></div>
+      <h1>You built it.<br>We make it <span class="accent">real.</span></h1>
+      <div class="hero-foot">
+        <div class="hallmark-row">
+          <div class="hallmark" aria-hidden="true"><span>改造</span></div>
+          <p><em>Kaizō (改造): to rebuild, to remodel.</em> You bring what you built with AI. We rebuild it into something that holds up.</p>
+        </div>
+        <div class="pitch">
+          <p>Kaizo is a selective venture studio. We pressure-test your idea, make your product secure and production-ready, launch it, and introduce the founders who earn it to investors.</p>
+          <div class="actions">
+            <a class="btn" href="#invite">Request an invite</a>
+            <a class="text-link" href="#levels">See the four levels</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="levels">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">The process</div>
+          <h2>Four levels.<br>Clear each to advance.</h2>
+        </div>
+        <p>Most ideas never get past the first. We would rather tell you early than build something nobody wants.</p>
+      </div>
+      <ol class="levels">
+        <li class="level">
+          <div class="num" aria-hidden="true">I</div>
+          <div class="what"><h3>Pressure-test the idea</h3><p>Problem, customer, competition, willingness to pay. You leave with a go, a fix or a kill.</p></div>
+          <div class="clear"><div class="label">To clear</div><div>A go verdict</div></div>
+        </li>
+        <li class="level">
+          <div class="num" aria-hidden="true">II</div>
+          <div class="what"><h3>Make it real</h3><p>We audit what you built, fix security, auth and data handling, and deploy it properly.</p></div>
+          <div class="clear"><div class="label">To clear</div><div>Secure and live</div></div>
+        </li>
+        <li class="level">
+          <div class="num" aria-hidden="true">III</div>
+          <div class="what"><h3>Launch</h3><p>Positioning, first users and monitoring, so it holds up when real people show up.</p></div>
+          <div class="clear"><div class="label">To clear</div><div>Agreed milestones hit</div></div>
+        </li>
+        <li class="level">
+          <div class="num" aria-hidden="true">IV</div>
+          <div class="what"><h3>Investor introductions</h3><p>Warm referrals to angels, once you have earned them. Introductions are never for sale.</p></div>
+          <div class="clear"><div class="label">To clear</div><div>Final level</div></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="who">
+    <div class="wrap">
+      <div class="label">Who we take</div>
+      <h2>Selective by design.</h2>
+      <div class="columns">
+        <div>
+          <div class="label">We take founders who</div>
+          <ul class="list">
+            <li>Have already put real time into it</li>
+            <li>Can name who has the problem</li>
+            <li>Have a prototype, or are close to one</li>
+            <li>Want honest feedback, including no</li>
+            <li>Will run the company themselves</li>
+          </ul>
+        </div>
+        <div>
+          <div class="label">We turn away</div>
+          <ul class="list no">
+            <li>"An idea I had"</li>
+            <li>Solutions looking for a problem</li>
+            <li>Asking us to come up with the idea</li>
+            <li>Wanting guaranteed funding</li>
+            <li>Looking for a dev shop to hire</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="deal">
+    <div class="wrap">
+      <div class="label">The deal</div>
+      <div class="terms">
+        <div class="term"><h3>Aligned with you.</h3><p>We share in the upside of what we build together. Terms are set with each founder once they clear Level I. You keep control of your company.</p></div>
+        <div class="term"><h3>We promise the work.</h3><p>A pressure-tested idea, a secure product that works, and a real launch.</p></div>
+        <div class="term"><h3 class="accent">Not miracles.</h3><p>Funding, users or revenue. Nobody honest can promise those, so we will not.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="invite" id="invite">
+    <div class="wrap">
+      <div class="invite-grid">
+        <div>
+          <div class="label">Request an invite</div>
+          <h2>Three spots<span class="accent">.</span></h2>
+          <p class="lede">We read every request and reach out to the founders we want to work with.</p>
+        </div>
+        <div>
+          <div class="label" style="padding-bottom: 18px">What we ask for</div>
+          <ol class="steps">
+            <li>Your name and email</li>
+            <li>What you are building, and who it is for</li>
+            <li>How far along you are: idea, prototype or live</li>
+            <li>A link to what you have built, if there is one</li>
+          </ol>
+          <div class="actions" id="invite-actions" hidden>
+            <a class="btn" id="invite-link" href="#invite" target="_blank" rel="noopener">Request an invite</a>
+          </div>
+          <p class="soon" id="invite-soon">Requests open shortly. Check back soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-mark">
+      <div class="hallmark" aria-hidden="true"><span>改造</span></div>
+      <span class="label">© 2026 Kaizo Ventures</span>
+    </div>
+    <nav class="nav" aria-label="Social">
+      <a href="#top">Instagram</a>
+      <a href="#top">TikTok</a>
+      <a href="#top">X</a>
+      <a href="#top">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Paste the invite form link (Tally or Google Forms) here to open requests.
+  var INVITE_URL = "";
+  (function () {
+    var actions = document.getElementById('invite-actions');
+    var soon = document.getElementById('invite-soon');
+    var link = document.getElementById('invite-link');
+    if (INVITE_URL) {
+      link.href = INVITE_URL;
+      actions.hidden = false;
+      soon.hidden = true;
+    }
+  })();
+</script>
+</body>
+</html>
